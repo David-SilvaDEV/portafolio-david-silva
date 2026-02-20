@@ -1,0 +1,81 @@
+/* ========================================= */
+/* SECCIÓN EXPERIENCIA - MODELO 2 */
+/* Verde + Beige moderno y elegante */
+/* ========================================= */
+
+.experiencia {
+    padding: 3.5rem 10%;
+    background: #EDE6DA; /* Beige arena elegante */
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* ========================= */
+  /* TÍTULO */
+  /* ========================= */
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+    color: #2F3E34; /* Verde principal */
+  }
+  
+  /* ========================= */
+  /* CARD */
+  /* ========================= */
+  .card {
+    background: #ffffff;
+    padding: 1.8rem;
+    border-radius: 10px;
+    border: 1px solid #dcd4c6; /* Borde beige suave */
+    transition: all 0.3s ease;
+  }
+  
+  /* Efecto sutil moderno */
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* ========================= */
+  /* HEADER DE CARD */
+  /* ========================= */
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Rol */
+  h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #1F2A23; /* Verde más profundo */
+  }
+  
+  /* Empresa */
+  .empresa {
+    font-size: 0.9rem;
+    color: #4A5A50;
+  }
+  
+  /* Periodo */
+  .periodo {
+    font-size: 0.85rem;
+    color: #6B6B6B;
+    background: #F5F0E6;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+  }
+  
+  /* Descripción */
+  .descripcion {
+    color: #444;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-top: 0.6rem;
+  }
