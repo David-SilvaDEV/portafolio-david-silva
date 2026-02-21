@@ -1,14 +1,30 @@
 <header class="header">
-    <div class="container">
-      <div class="logo">
-        David Silva
-      </div>
-  
-      <nav class="nav">
-        <a routerLink="/">Inicio</a>
-        <a routerLink="/about">Sobre mí</a>
-        <a routerLink="/projects">Proyectos</a>
-        <a routerLink="/contact">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  <div class="container">
+    <div class="logo">David Silva</div>
+
+    <!-- NAV DESKTOP -->
+    <nav class="nav desktop">
+      <a href="#inicio">Inicio</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <button class="hamburger" (click)="toggleMenu()">
+      <span [class.open]="isMenuOpen"></span>
+      <span [class.open]="isMenuOpen"></span>
+      <span [class.open]="isMenuOpen"></span>
+    </button>
+  </div>
+
+  <!-- NAV MOBILE -->
+  <nav class="nav mobile" [class.open]="isMenuOpen">
+    <a href="#inicio" (click)="closeMenu()">Inicio</a>
+    <a href="#experiencia" (click)="closeMenu()">Experiencia</a>
+    <a href="#proyectos" (click)="closeMenu()">Proyectos</a>
+    <a href="#sobre-mi" (click)="closeMenu()">Sobre mí</a>
+    <a href="#contacto" (click)="closeMenu()">Contacto</a>
+  </nav>
+</header>

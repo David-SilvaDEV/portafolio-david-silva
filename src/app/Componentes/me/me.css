@@ -1,0 +1,67 @@
+.about-section {
+    background-color: #0f1513;
+    padding: 5rem 1.5rem;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #f3eede;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .about-text {
+    max-width: 750px;
+    color: #cfcab8;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .about-card {
+    background: linear-gradient(180deg, #141c19, #0f1513);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  }
+  
+  .about-card h3 {
+    color: #f3eede;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-card li {
+    color: #cfcab8;
+    padding: 0.4rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .tech-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem 1rem;
+  }

@@ -1,0 +1,68 @@
+<section class="proyectos">
+  <div class="container">
+
+    <h2>Proyectos</h2>
+
+    <div class="cards">
+
+      <!-- CARD PROYECTO -->
+      <div class="card" *ngFor="let proyecto of proyectos">
+
+        <!-- IMÁGENES -->
+        <div class="image-wrapper">
+          <img 
+            [src]="proyecto.imagenes[currentIndex[proyecto.id]]"
+            (click)="openModal(proyecto, currentIndex[proyecto.id])"
+            alt="Imagen del proyecto"
+          />
+
+          <!-- Flechas -->
+          <button 
+            class="prev" 
+            (click)="prevImage(proyecto.id); $event.stopPropagation()">
+            ‹
+          </button>
+
+          <button 
+            class="next" 
+            (click)="nextImage(proyecto.id); $event.stopPropagation()">
+            ›
+          </button>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="card-body">
+          <h3>{{ proyecto.titulo }}</h3>
+          <p>{{ proyecto.descripcion }}</p>
+
+          <!-- BOTÓN VER PÁGINA -->
+          <a 
+            class="btn-ver"
+            [href]="proyecto.url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver página
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div 
+    class="modal" 
+    *ngIf="modalOpen" 
+    (click)="closeModal()">
+
+    <img 
+      [src]="modalImage" 
+      alt="Vista ampliada del proyecto"
+      (click)="$event.stopPropagation()"
+    />
+
+  </div>
+
+</section>
