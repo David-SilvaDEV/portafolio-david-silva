@@ -31,9 +31,9 @@ export class ProyectosComponent implements OnInit {
       descripcion: 'Disquera musical desarrollada con Angular.',
       url: 'https://david-silvadev.github.io/Deities', // ← cambia por tu URL real
       imagenes: [
-        '/media/img/proyectos/deities/deitiesweb.webp',
-        '/media/img/proyectos/deities/deitieswebtableta.webp',
-        '/media/img/proyectos/deities/deitieswebphone.webp'
+        './media/img/proyectos/deities/deitiesweb.webp',
+        './media/img/proyectos/deities/deitieswebtableta.webp',
+        './media/img/proyectos/deities/deitieswebphone.webp'
       ],
 
 
@@ -44,9 +44,9 @@ export class ProyectosComponent implements OnInit {
       descripcion: 'Descubre los beneficios del cannabis medicinal, su uso seguro y responsable para mejorar la salud y el bienestar.',
       url: 'https://cannabi-doctor.netlify.app', // ← cambia por tu URL real
       imagenes: [
-        '/media/img/proyectos/cannabi/cannabiweb.webp',
-        '/media/img/proyectos/cannabi/cannabitableta.webp',
-        '/media/img/proyectos/cannabi/cannabiphone.webp'
+        './media/img/proyectos/cannabi/cannabiweb.webp',
+        './media/img/proyectos/cannabi/cannabitableta.webp',
+        './media/img/proyectos/cannabi/cannabiphone.webp'
       ],
 
 
@@ -58,9 +58,9 @@ export class ProyectosComponent implements OnInit {
       descripcion: 'Gestor de proyectos desarrollado con ASP.NET, con API propia y backend robusto para una gestión eficiente y segura de tareas.',
       url: 'https://github.com/David-SilvaDEV/GestorProyectos', // ← cambia por tu URL real
       imagenes: [
-        '/media/img/proyectos/gestorproyectos/gestor1.webp',
+        './media/img/proyectos/gestorproyectos/gestor1.webp',
 
-        '/media/img/proyectos/gestorproyectos/gestor3.webp'
+        './media/img/proyectos/gestorproyectos/gestor3.webp'
       ],
 
 

@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portafolio-david-silva": "node dist/portafolio-david-silva/server/server.mjs",
-    "deploy": "ng build --configuration production --base-href /portafolio-david-silva/ && npx angular-cli-ghpages --dir=dist/portafolio-david-silva"
+    "deploy": "ng build --configuration production --base-href /portafolio-david-silva/ && npx angular-cli-ghpages --dir=dist/portafolio-david-silva/browser"
   },
   "prettier": {
     "printWidth": 100,
